@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAK Bites - Offers</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #ff5733;
+            color: white;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #ffcc29;
+            text-decoration: underline;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+        .offers-hero {
+            text-align: center;
+            padding: 50px;
+            background: url('https://source.unsplash.com/1600x600/?discount') no-repeat center center/cover;
+            color: rgba(251, 18, 18, 0.736);
+            font-size: 24px;
+        }
+        .offers-container {
+            padding: 40px;
+            text-align: center;
+        }
+        .offers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+        .offer-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .offer-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .offer-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .offer-card h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .offer-card p {
+            font-size: 16px;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MAK Bites</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Menu</a></li>
+                <li><a href="offer.html">Offers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="offers-hero">
+        <h1>Exclusive Offers Just For You!</h1>
+        <p>Save big with our amazing deals and discounts.</p>
+    </section>
+    <section class="offers-container">
+        <h2>Bank Offers</h2>
+        <div class="offers-grid">
+            <div class="offer-card">
+                <img src="https://play-lh.googleusercontent.com/POGVZhNvSh05yA01H2VTlElv0Mw6r4R7hj9w7DaOvJVgiGoi0Fcawi02yITkyMT1zwqO=w240-h480-rw" alt="Bank Logo">
+                <h3>HDFC Bank</h3>
+                <p>Get 20% off on orders above ₹500 using HDFC Credit Card.</p>
+            </div>
+            <div class="offer-card">
+                <img src="https://play-lh.googleusercontent.com/3k0f2yWl15mhkyltVQoqwmfRcm6ywTDYOttNHusElScrqjxYHLK82oVnjt3wQJQyPw" alt="Bank Logo">
+                <h3>ICICI Bank</h3>
+                <p>Avail 15% cashback on orders above ₹300 using ICICI Debit Card.</p>
+            </div>
+            <div class="offer-card">
+                <img src="https://media.licdn.com/dms/image/D4D12AQFJhihHrazXfQ/article-cover_image-shrink_720_1280/0/1696345089845?e=2147483647&v=beta&t=84zUgvv-BoNM2L5es3VccvjwdM1dvIRTTqJDLDPfkf4" alt="Bank Logo">
+                <h3>SBI Bank</h3>
+                <p>Get 10% off on all orders using SBI Credit Card.</p>
+            </div>
+        </div>
+    </section>
+    <section class="offers-container">
+        <h2>Online Payment Offers</h2>
+        <div class="offers-grid">
+            <div class="offer-card">
+                <img src="https://yt3.googleusercontent.com/nfovxGynnTWHMBFQfUjZzbFrViXNa9MYLZXuRFXhWGAfwWwIBsqV_4B5A_LGu0sZlMenuimmsQ=s900-c-k-c0x00ffffff-no-rj" alt="Paytm Logo">
+                <h3>Paytm</h3>
+                <p>Get ₹50 cashback on orders above ₹200 using Paytm Wallet.</p>
+            </div>
+            <div class="offer-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv7C7cl9ufztQRxoH-y_biXvwoAf5bynbtnA&s" alt="PhonePe Logo">
+                <h3>PhonePe</h3>
+                <p>Avail 10% cashback on orders above ₹300 using PhonePe.</p>
+            </div>
+            <div class="offer-card">
+                <img src="https://www.yunnx.com/upload/20240229/46fc1391178cbe.png" alt="Google Pay Logo">
+                <h3>Google Pay</h3>
+                <p>Get ₹25 cashback on orders above ₹150 using Google Pay.</p>
+            </div>
+        </div>
+    </section>
+    <section class="offers-container">
+        <h2>Cash Offers</h2>
+        <div class="offers-grid">
+            <div class="offer-card">
+                <img src="https://cdn.vectorstock.com/i/1000v/06/92/cash-payments-concept-vector-13730692.jpg" alt="Cash Payment">
+                <h3>Cash Payment</h3>
+                <p>Get 5% off on all orders when you pay with cash.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+    </footer>
+</body>
+</html>
